@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Operaciones Js</title>
+</head>
+
+<body>
+    <h1>Operaciones con JavaScrip</h1>
+</body>
+<script>
+    // Ejercicio 1
+    /*Algoritmo de suma
+        1. Pedirle un número al usuario
+        2. Pedirle un segundo número al usuario
+        3. asignar los valores a las variables
+        4. Mostar la operación en pantalla
+    */
+    alert("Bienvenido")
+    do {
+        opcion = Number(prompt(`Elige la operacion \n
+            1.- Suma \n
+            2.- Resta\n
+            3.- Multiplicacion\n
+            4.-Division \n`))
+            let num1 = prompt("Por favor dame un número")
+            let num2 = prompt("Por favor dame otro número")
+        switch (opcion) {
+            case 1:
+                let suma = Number(num1) + Number(num2)
+                alert(`La suma de ${num1} + ${num2} es =  ${suma} `)
+                break;
+            case 2:
+                let resta = Number(num1) - Number(num2)
+                alert(`La resta de ${num1} - ${num2} es =  ${resta}`)
+                break;
+            case 3:
+                let Multiplicacion = Number(num1) * Number(num2)
+                alert(`La Multiplicacion de ${num1} * ${num2} es =  ${Multiplicacion}`)
+                break;
+            case 4:
+                let Division = Number(num1) / Number(num2)
+                alert(`La Division de ${num1} / ${num2} es =  ${Division}`)
+                break;
+        }
+    } while (opcion != 0)
+</script>
+
+</html>
